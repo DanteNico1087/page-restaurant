@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  #logo{
+    background: url(../img/logos/logo.png) no-repeat;
+    background-color: green;
+    float: left;
+    width: 100px;
+    height: 80px;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+  .header a {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header a:hover {
+    background-color: white;
+    color: green;
+  }
+
+  
+  .header> img {
+    max-width: 100px;
+    float: left;
+  }
+
+  @media (max-width: 430px) {
+    .header img {
+        width: 50%;
+    }
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .header a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  text-align: end;
+  z-index: -1;
+  padding-top: 40px;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px; 
+  line-height: 30px; 
+  padding-top: 40px; 
+  padding-right: 20px;
+  color: white; 
+}
+
+@media screen and (min-width: 769px) {
+  label {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .menu a {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display:none;
+    position: relative;
+    margin-top: 50px;
+    right: 0;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+   #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+
+/* Estilos para las imágenes del slider */
+.banner {
+  display: none;
+  width: 100%;
+  padding-top: 122px;
+}
+
+/* Muestra la primera imagen del slider */
+.banner:first-of-type {
+  display: block;
+}
+
+/* Estilos para los botones de navegación */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Posiciona el botón "siguiente" a la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.controles{
+  text-align: center;
+}
+
+/* Agrega un fondo negro con un poco de transparencia al pasar el mouse sobre los botones de navegación */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Estilos para los puntos de navegación */
+.dot {
+  cursor:pointer;
+  height:15px;
+  width:15px;
+  margin:2px;
+  background-color:chartreuse;
+  border-radius:50%;
+  display:inline-block;
+}
+
+/* Cambia el color de fondo de los puntos de navegación al pasar el mouse sobre ellos */
+.dot:hover {
+    background-color:#717171;
+}
+
+
+.prod{
+  font-size: 30px;
+  text-align: center;
+  font-family:cursive;
+}
+
+#productos{
+  margin-top: 30px;
+}
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+  .container > div {
+    width: calc(33.33% - 10px);
+    height: 100px;
+    margin: 5px;
+    position: relative;
+  }
+  .container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container > div > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px;
+    display: none;
+  }
+  .container > div:hover > span {
+    display: block;
+  }
+
+  .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .container1 > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .container1 > p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .container1 > img {
+    max-width: 50%;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  
+  .container1 > img:nth-of-type(2) {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
+  .container-video {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .container-video > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .container-video > video {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-galeria {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .container-galeria > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .container-galeria > p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery > img {
+    margin: 10px;
+    cursor: pointer;
+    width: 150px; /* Establece el ancho de las imágenes */
+    margin: 5px;
+  }
+  
+
+.modal {
+  display: none; 
+  position: relative;
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+  max-width: 700px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+footer {
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  background-color: green;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-content {
+  width: 50%;
+}
+
+.about-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-row {
+  display: flex;
+  margin-top: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.image-container img {
+  width: 20%;
+  border-radius: 50px;
+}
+
+
+footer p {
+  margin: 0;
+}
+
+.social-media{
+  margin-top: 20px;
+}
+
+.social-media img {
+  height: 2.5em;
+  margin: 0 5px;
+}
+
+
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ddd;
+}
+
+form {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  width: 400px; /* Limita el ancho máximo del formulario */
+}
+
+form label{
+  font-size: medium;
+}
+form label,
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  color: black;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-bottom: black;
+  border-bottom-color: black;
+  outline: none;
+  padding: 5px 0;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  footer p,
+  .social-media a {
+      font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  footer p,
+  .social-media a {
+      font-size: 0.6em;
+  }
+}
+
+.modal {
+  display: none; /* Oculta la ventana modal por defecto */
+  position: fixed; /* Fija la posición de la ventana modal */
+  z-index: 1; /* Coloca la ventana modal por encima del resto del contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita el desplazamiento si es necesario */
+  background-color: rgba(0, 0, 0, 0.9); /* Color de fondo semitransparente */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 700px;
+}
+
+.close {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}

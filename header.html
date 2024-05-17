@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="header" id="navbar">
+      <h1 id="logo"></h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle" />
+      <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#salud">Salud</a>
+        <a href="#recetas">Recetas</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+    </nav>
+
+
+
+  </header>
+
+
+  <main>
+
+    <section id="inicio">
+      <img class="banner" src="Carru/carru-02-pc.jpg" alt="Banner">
+      <img class="banner" src="Carru/carru-03-pc.jpg" alt="Banner">
+      <img class="banner" src="Carru/carru-01-pc.jpg" alt="Banner">
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+      <div class="controles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+
+
+
+    <!-- Sección 2: Pastillas de información -->
+    <section id="productos">
+      <h1 class="prod">Productos</h1>
+      <div class="container">
+        <div>
+          <img src="img/Ensalada Cesar.jpg" alt="Ensalada César">
+          <span>Ensalada César con pollo a la parrilla y aderezo ligero</span>
+        </div>
+        <div>
+          <img src="img/Wrap de pollo.jpeg" alt="Wrap de pollo">
+          <span>Wrap de pollo con vegetales frescos y salsa de yogur</span>
+        </div>
+        <div>
+          <img src="img/Burrito Vegetariano.jpg" alt="Burrito vegetariano">
+          <span>Burrito vegetariano con frijoles, arroz integral y guacamole</span>
+        </div>
+        <div>
+          <img src="img/Hamburguesa de pavo.jpg" alt="Hamburguesa de pavo">
+          <span>Hamburguesa de pavo con lechuga, tomate y cebolla</span>
+        </div>
+        <div>
+          <img src="img/Panini de verduras.jpg" alt="Panini de verduras">
+          <span>Panini de verduras asadas con queso bajo en grasas</span>
+        </div>
+        <div>
+          <img src="img/Pizza de vegetales.jpg" alt="Pizza de vegetales">
+          <span>Pizza de vegetales con masa integral y queso bajo en grasas</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sección 3: Nota principal -->
+    <section id="salud">
+      <div class="container1">
+        <h1>Salud</h1>
+        <p>La comida rápida tiene la reputación de ser poco saludable y alta en calorías, sal y grasas. Afortunadamente,
+          hay excepciones. Aunque muchos alimentos rápidos han sido procesados, refinados o fritos, algunos restaurantes
+          de comida rápida ahora ofrecen opciones saludables.</p>
+        <img src="img/Ensalada saludable.jpeg" alt="Ensalada saludable">
+        <p>Para hacer una selección más saludable, busca elementos que incluyan verduras, fuentes magras de proteína o
+          granos enteros. Además, optar por alimentos que sean a la parrilla o al horno en lugar de fritos puede reducir
+          significativamente las calorías y grasas en tu comida.</p>
+        <img src="img/Farmhouse salad.jpeg" alt="Comida rápida saludable">
+        <p>Hay muchas opciones saludables disponibles en restaurantes de comida rápida. Por ejemplo, en Eco Burguer
+          ofrecemos una ensalada llamada Farmhouse Salad que incluye una amplia variedad de verduras ricas en fibra,
+          como col rizada, calabaza y coles de Bruselas. La fibra se mueve lentamente a través del cuerpo sin digerir y
+          ayuda a promover la sensación de saciedad mientras apoya la regularidad y reduce el riesgo de ciertas
+          enfermedades, como enfermedades cardíacas y diabetes.</p>
+        <img src="img/Opciones saludables.jpeg" alt="Opciones saludables en restaurantes de comida rápida">
+        <p>Otra opción saludable es la ensalada Strawberry Poppyseed con pollo de Panera. Esta ensalada es baja en
+          calorías, sodio y grasas, pero alta en proteínas y fibra. También contiene una variedad de frutas y verduras
+          que proporcionan vitaminas, minerales y antioxidantes.</p>
+        <p>Aquí en Eco Burguer también ofrecemos una opción llamada Coconut Chicken & Miso Sweet Potato Balance Box que
+          incluye pollo a la parrilla, batatas con miso y arce, aguacate, granada y una mezcla de semillas sobre
+          espinacas, arroz integral, garbanzos y quinua roja. Esta comida cumple con los criterios para ser considerada
+          comida rápida saludable ya que es alta en proteínas y fibra, baja en calorías e incluye una buena mezcla de
+          granos enteros, verduras y grasas saludables.</p>
+        <p>En resumen, aunque la comida rápida tiene la reputación de ser poco saludable, hay muchas opciones
+          disponibles que son nutritivas y deliciosas. Al elegir alimentos que incluyan verduras, fuentes magras de
+          proteína o granos enteros y optar por opciones a la parrilla o al horno en lugar de fritas, puedes disfrutar
+          de una comida rápida saludable sin culpa.</p>
+      </div>
+    </section>
+
+    <!-- Sección 4: Video -->
+    <section id="recetas">
+
+      <div class="container-video">
+        <h1>En este video te dejamos nuestra receta de Hamburguesa de Garbanzos!!!</h1>
+        <video controls>
+          <source src="video/hambur.garbanzos.mp4.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+
+    </section>
+
+    <!-- Sección 5: Galería de imágenes -->
+    <section id="galeria">
+
+      <div class="container-galeria">
+        <h1>Eco Burguer</h1>
+
+        <p>Si estás buscando una opción de comida rápida saludable y amigable con el medio ambiente, te recomendamos
+          probar Eco Burguer. Esta cadena de restaurantes ofrece deliciosas hamburguesas hechas con ingredientes
+          orgánicos y locales. ¡No te pierdas la oportunidad de probarlas!</p>
+
+        <div class="gallery">
+          <img src="img/comida galeria.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria1.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria2.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria3.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria4.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria5.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria6.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria7.jpeg" alt="Eco Burguer">
+          <img src="img/comida galeria8.jpeg" alt="Eco Burguer">
+          <img src="img/eco burguer.jpeg" alt="Eco Burguer">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">x</span>
+          <img class="modal-content" alt="salir" id="img01">
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer>
+
+    <div class="social-media">
+      <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.png"
+          alt="facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.png"
+          alt="instagram"></a>
+      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Des" target="_blank"
+        rel="noopener noreferrer"><img src="iconos/twitter.png" alt="twiter"></a>
+    </div>
+
+    <form class="form-content" action="mailto:[Tu dirección de correo electrónico]" method="post" enctype="text/plain">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="apellido">Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="comentario">Comentario:</label><br>
+      <textarea id="comentario" name="comentario"></textarea><br><br>
+      <input type="submit" value="Enviar">
+    </form>
+
+    <div id="nosotros" class="about-us">
+      <h2>Nosotros</h2>
+      <p>¡Bienvenido a nuestra hamburgueceria! Tenemos gran variedad de productos acordes a tus necesidades. También nos
+        especializamos en comidas veganas para que todos se sientan en casa. Nos vamos a presentar.</p>
+
+      <div class="image-row">
+        <div class="image-container">
+          <img src="img/img_pequeñas/cristian.jpg" alt="foto">
+          <p>Hola, soy Cristian trabajo en Eco Burguer hace 2 años, me desempeño en el area de marketing,comunicación y
+            redes sociales.
+
+            Soy un afortunado de trabajar en esta empresa porque el trabajo en equipo es nuestro fuerte.</p>
+        </div>
+        <div class="image-container">
+          <img src="img/img_pequeñas/pau-celu.jpg" alt="Imagen 2">
+          <p>Hola soy Paula Treus tengo 25 años, trabajo en Eco Burguer hace 4 años, soy productiva trabajo en equipo
+            simpatica, alegre sincera honesta mi especialidad es la parte de la empresa soy la la moza y cajera.</p>
+        </div>
+      </div>
+
+      <section class="desarrollador">
+        <h4>Desarrollado por:</h4>
+        <p>Dante Nicolás Caballero</p>
+        <p>D@nte.dev</p>
+      </section>
+
+    </div>
+  </footer>
+
+
+  <script src="function.js"></script>
+
+</body>
+
+</html>

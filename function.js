@@ -49,6 +49,7 @@ let modalImg = document.getElementById("img01");
 //   }
 // }
 
+// Función para mostrar imagen de galería
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(){
     modal.style.display = "block";
@@ -65,12 +66,3 @@ span.onclick = function() {
 
   navbar.style.display = "block";
 }
-
-
-
-
-
-
-
-
-
